@@ -1,8 +1,6 @@
-/* NICOLAS D */
 .regroup {
     display: flex;
     justify-content: space-evenly;
-
 }
 
 section h2 {
@@ -10,12 +8,10 @@ section h2 {
     text-align: center;
 }
 
-
 section form div {
     width: 100%;
     border-bottom: 2px solid #adadad;
     margin-bottom: 2rem;
-
 }
 
 input {
@@ -29,6 +25,7 @@ input {
     background-color: #F5F6F8;
 }
 
+/* BOUTON POUR ENVOYER */
 input[type=submit] {
     border: solid 2px #6472AC;
     background: none;
@@ -45,10 +42,4 @@ input[type=submit]:hover {
     color: white;
     border-radius: 7px;
     padding: 2.5%;
-}
-
-@media all and (max-width:768px) {
-    .onglets {
-        display: none;
-    }
 }

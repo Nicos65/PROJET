@@ -28,6 +28,13 @@ p {
     font-size: 20px;
 }
 
+/* NAV ORDI */
+.div_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .arobase {
     font-size: 40px;
 }
@@ -64,6 +71,25 @@ nav .onglets a {
     margin-right: 10px;
     padding-bottom: 5px;
 }
+
+/* NAV TELEPHONE */
+.onglets_tel {
+    height: 25px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+}
+
 footer {
     color: #fff;
     padding: 30px 100px;
@@ -112,4 +138,34 @@ footer .services .service p {
 
 #end {
     text-align: center;
+}
+
+/* MEDIA */
+/* MIN */
+@media all and (min-width:769px) {
+    .onglets_tel {
+        display: none;
+    }
+}
+
+/* MAX */
+@media all and (max-width:768px) {
+    .onglets {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 0% 5% 0% 2%;
+    }
+}
+
+@media all and (max-width:425px) {
+    footer {
+        padding: 30px;
+    }
+
+    .regroup {
+        display: block;
+    }
 }
