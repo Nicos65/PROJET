@@ -1,0 +1,16 @@
+img{
+    background-image: cover;
+}
+.img1{
+    width:120px;
+    height: 70px;
+    border-radius: 100%;
+    margin-top: 50px;
+    margin-bottom: auto;
+}
+
+.logos1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
