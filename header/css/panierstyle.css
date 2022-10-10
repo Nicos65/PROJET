@@ -37,20 +37,14 @@ input[type=submit]:hover{
 
 #recap{
     padding: 5%;
-}
-
-#articles, #recap{
     background: #f5f6f8;
+    height: 400px;
+    width: 500px;
 }
-
-#articles{
-    margin: 0 5% 0 0;
-}
-
 
 h4{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
     margin: 0;
     padding: 4% 0 7% 0;
@@ -68,4 +62,51 @@ h4{
 .submit{
     margin-top: 10%;
     text-align: center;
+}
+
+/*Organisation ajout au panier*/
+.article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: #f5f6f8;
+    margin: 0% 5% 2% 0;
+}
+
+.fakeprice{
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: end;
+}
+
+.supprimer{
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+}
+
+.supprimer, .fakeprice{
+    margin-top: 7%;
+    margin-right: 5%;
+}
+
+.nomproduit{
+    text-align: left;
+}
+
+@media screen and (max-width: 1250px) {
+    #container{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    #articles{
+        grid-row: 1;
+        width: 100%;
+    }
+    #recap{
+        grid-row: 2;
+        width: 100%;
+        margin-right: 10%;
+    }
 }
