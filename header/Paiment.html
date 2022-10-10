@@ -6,6 +6,7 @@
     <title>Paiement</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/styleall.css">
+    <link rel="stylesheet" href="css/paiement.css">
 </head>
 
 <body>
@@ -16,13 +17,96 @@
                 <h1>SM<span class="arobase">@</span>RTECH</h1>
             </a>
             <div class="onglets">
-                <a href="index.html">Accueil</a>
-                <a href="B_pages/Contact.html">Contact</a>
-                <a href="B_pages/Compte.html">Compte</a>
-                <a href="B_pages/Panier.html">Panier</a>
+                <a href="../index.html">Accueil</a>
+                <a href="Contact.html">Contact</a>
+                <a href="Compte.html">Compte</a>
+                <a href="Panier.html">Panier</a>
             </div>
         </nav>
     </header>
+
+    <section>
+        <h2 class="titre">Paiement</h2>
+        <div id="container">
+            <article>
+                <h4>Adresse de livraison</h4>
+                    <form action="" id="adresse">
+
+                        <div>
+                            <label for="nom">Nom</label>
+                            <br>
+                            <input type="text" name="nom">
+                        </div>
+
+                        <div>
+                            <label for="prenom">Prénom</label>
+                            <br>
+                            <input type="text" name="prenom">
+                        </div>
+
+                        <div>
+                            <label for="code">Code postal</label>
+                            <br>
+                            <input type="number" name="code">
+                        </div>
+
+                        <div>
+                            <label for="ville">Ville</label>
+                            <br>
+                            <input type="text" name="ville">
+                        </div>
+
+                        <div>
+                            <label for="adresse">Adresse</label>
+                            <br>
+                            <input type="text" name="adresse">
+                        </div>
+
+                        <div>
+                            <label for="complement">Complément d'adresse</label>
+                            <br>
+                            <input type="text" name="complement">
+                        </div>
+                    </form>
+            </article>
+
+            <article>
+                <h4>Coordonnées bancaires</h4>
+                    <form action="" id="coordonnes">
+
+                        <legend>Mode de paiement</legend>
+
+                        <div>
+                            <input type="radio" name="visa"><label for="visa">Visa</label>
+                            <input type="radio" name="cb"><label for="cb">Carte bancaire</label>
+                            <input type="radio" name="paypal"><label for="paypal">Paypal</label>
+                        </div>
+
+                        <div>
+                        <label for="netp">Nom et prénom</label>
+                        <input type="text" name="netp">
+                        </div>
+
+                        <div>
+                        <label for="iban">IBAN</label>
+                        <input type="text" name="iban">
+                        </div>
+
+                        <div>
+                        <label for="exp">Date d'expiration</label>
+                        <input type="text" name="exp">
+                        </div>
+                        
+                        <div>
+                        <label for="exp">Date d'expiration</label>
+                        <input type="text" name="exp">
+                        </div>
+
+                    </form>
+            </article>
+        </div>
+        <div class="button"><button><a href="Remerciemen.html">Confirmer le paiement</a></button></div>
+    </section>
 
     <footer>
         <h1>Nos services</h1>
