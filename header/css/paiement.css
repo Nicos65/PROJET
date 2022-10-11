@@ -1,29 +1,59 @@
+/*Agencement du formulaire*/
 #container{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
 }
 
-#adresse{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-}
-
-#coordonnes{
+.boite1, .boite2{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
 }
 
-label:nth-of-type(1){
-    grid-column: 1;
+.modep{
+    padding-bottom: 5%;
 }
 
-label:nth-of-type(2){
-    grid-column: 2;
+/*Design du formulaire*/
+input[type=text],[type=number]{
+    border: none;
+    color: #555555;
+    background-color: #F5F6F8;
+    height: 45px;
+    width: 90%;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 2rem;
 }
 
-.titre{
+/*Design input submit*/
+input[type=submit]{
+    border: solid 2px #6472AC;
+    background: none;
+    cursor: pointer;
+    color: #6472AC;
+    border-radius: 9px;
+    padding: 1vw;
+    margin: 2%;
+    font-size: 1.2rem;
+}
+
+input[type=submit]:hover{
+    background: #6472AC;
+    border: solid 2px #6472AC;
+    color: white;
+    border-radius: 7px;
+    padding: 1vw;
+    margin: 2%;
+}
+
+.boutton{
+    text-align: center;
+}
+
+/*Titre h2 de la page*/
+.titre{ 
     color: #6472AC;
     text-align: center;
     font-size: 2.5rem;
@@ -31,30 +61,7 @@ label:nth-of-type(2){
     letter-spacing: 2px;
 }
 
-button{
-    border: solid 2px #6472AC;
-    background: none;
-    cursor: pointer;
-    color: #6472AC;
-    border-radius: 9px;
-    padding: 2.5%;
-    margin: 2%;
+h4{
     font-size: 1.2rem;
 }
 
-button:hover{
-    background: #6472AC;
-    border: solid 2px #6472AC;
-    color: white;
-    border-radius: 7px;
-    padding: 2.5%;
-    margin: 2%;
-}
-
-button::after{
-    color: white;
-}
-
-.button{
-    text-align: center;
-}
