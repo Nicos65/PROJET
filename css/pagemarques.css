@@ -1,0 +1,11 @@
+.produits{
+   width: 600px;
+   height: 600px;
+   background-color: blueviolet;
+   display: flex;
+}
+.produit1 .produit2 .produit3 .produit4 .produit5 .produit6{
+width: 100px;
+height: 100px;
+background-color: aquamarine;
+}

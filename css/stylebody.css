@@ -1,8 +1,14 @@
+.carousel-inner{
+    width: 500px;
+    height: 500px;
+}
 img{
-    background-image: cover;
+    width: 1000px;
+    height: 500px;
+    align-items: center;
 }
 .img1{
-    width:120px;
+    width:90px;
     height: 70px;
     border-radius: 100%;
     margin-top: 50px;
@@ -13,4 +19,3 @@ img{
     display: flex;
     justify-content: space-evenly;
 }
-
