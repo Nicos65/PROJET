@@ -12,54 +12,62 @@
 <body>
     <header>
         <nav>
-            <img class="logo" src="../ressources/logo.png">
-            <h1>SM<span class="arobase">@</span>RTECH</h1>
+            <div class="div_nav">
+                <a href="../index.html"><img class="logo" src="../ressources\logo.png"></a>
+                <h1>SM<span class="arobase">@</span>RTECH</h1>
+            </div>
             <div class="onglets">
-                <a href="../header/index.html">Accueil</a>
+                <a href="../index.html">Accueil</a>
                 <a href="../header/Contact.html">Contact</a>
                 <a href="#">Compte</a>
                 <a href="../header/Panier.html">Panier</a>
             </div>
+            <div class="onglets_tel">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
         </nav>
     </header>
     <section class="regroup">
-        <section>
-            <h2>Connection</h2>
+        <section class="section_form">
+            <h2>Connexion</h2>
             <form action="" method="post">
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" data-validate="Valid email is: a@b.c" placeholder="Email" required name="email"
-                        id="email">
-                    <span class="focus-input100" data-placeholder="Email"></span>
+                    <input type="email" data-validate="Valid email is: a@b.c" placeholder="Email" required name="email">
                 </div>
                 <div>
                     <label for="password">Mot de passe</label>
-                    <input type="password" placeholder="Mot de passe" required name="password" id="password">
+                    <input type="password" placeholder="Mot de passe" required name="password">
                 </div>
+                <input type="submit" value="Se Connecter">
+            </form>
         </section>
         <section>
             <h2>Inscription</h2>
             <form action="" method="post">
                 <div>
                     <label for="password">Prenom</label>
-                    <input type="text" placeholder="Prenom" name="password" id="password">
+                    <input type="text" placeholder="Prenom" name="password">
                 </div>
                 <div>
                     <label for="password">Nom</label>
-                    <input type="text" placeholder="Nom" required name="password" id="password">
+                    <input type="text" placeholder="Nom" required name="password">
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" placeholder="Email" required name="email" id="email">
+                    <input type="email" data-validate="Valid email is: a@b.c" placeholder="Email" required name="email">
                 </div>
                 <div>
                     <label for="password">Mot de passe</label>
-                    <input type="password" placeholder="Mot de passe" required name="password" id="password">
+                    <input type="password" placeholder="Mot de passe" required name="password">
                 </div>
                 <div>
                     <label for="password">Confirmer mot de passe</label>
-                    <input type="password" placeholder="Confirmer mot de passe" required name="password" id="password">
+                    <input type="password" placeholder="Confirmer mot de passe" required name="password">
                 </div>
+                <input type="submit" value="S'Inscrire">
             </form>
         </section>
     </section>
@@ -71,7 +79,7 @@
                 <h3>Nous suivre</h3>
                 <nav class="nav-footer">
                     <ul>
-                        <li><a href="../footer_pages/Qui.html">Qui Sommes-Nous?</a></li>
+                        <li><a href="../footer/Qui.html">Qui Sommes-Nous?</a></li>
                         <li><a href="">Facebook</a></li>
                         <li><a href="">Instagram</a></li>
                         <li><a href="">Twitter</a></li>
@@ -83,10 +91,10 @@
                 <h3>Aide & information</h3>
                 <nav class="nav-footer">
                     <ul>
-                        <li><a href="../footer_pages/CGV.html">CGV</a></li>
-                        <li><a href="../footer_pages/Mention.html">Mention légales</a></li>
-                        <li><a href="../footer_pages/Politique.html">Politique de confidentialité</a></li>
-                        <li><a href="../B_compte/Contact.html">Contact</a></li>
+                        <li><a href="../footer/CGV.html">CGV</a></li>
+                        <li><a href="../footer/Mention.html">Mention légales</a></li>
+                        <li><a href="../footer/Politique.html">Politique de confidentialité</a></li>
+                        <li><a href="../header/Contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>

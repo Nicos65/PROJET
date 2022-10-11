@@ -6,21 +6,26 @@
     <title>Panier</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/styleall.css">
-    <link rel="stylesheet" href="panierstyle.css">
+    <link rel="stylesheet" href="css/panierstyle.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="index.html"><img class="logo" src="../ressources\logo.png"></a>
-            <a href="index.html">
+            <div class="div_nav">
+                <a href="../index.html"><img class="logo" src="../ressources\logo.png"></a>
                 <h1>SM<span class="arobase">@</span>RTECH</h1>
-            </a>
+            </div>
             <div class="onglets">
-                <a href="index.html">Accueil</a>
-                <a href="B_pages/Contact.html">Contact</a>
-                <a href="B_pages/Compte.html">Compte</a>
-                <a href="B_pages/Panier.html">Panier</a>
+                <a href="../index.html">Accueil</a>
+                <a href="../header/Contact.html">Contact</a>
+                <a href="../header/Panier.html">Compte</a>
+                <a href="#">Panier</a>
+            </div>
+            <div class="onglets_tel">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
         </nav>
     </header>
@@ -28,24 +33,47 @@
 
     <section>
 
-        <h2>Panier</h2>
-   
+        <h2 class="titre">Panier</h2>
+
         <div id="container">
-            <div id="articles"></div>
+            <div id="articles">
+                <div class="article">
+                    <img src="..." alt="article">
+                    <h4 class="nomproduit">Nom produit</h4>
+                    <p class="fakeprice">20.99€</p>
+                    <img src="../ressources/signe-de-la-croix.png" alt="supprimer" class="supprimer">
+                </div>
+
+                <div class="article">
+                    <img src="..." alt="article">
+                    <h4 class="nomproduit">Nom produit</h4>
+                    <p class="fakeprice">20.99€</p>
+                    <img src="../ressources/signe-de-la-croix.png" alt="supprimer" class="supprimer">
+                </div>
+
+                <div class="article">
+                    <img src="..." alt="article">
+                    <h4 class="nomproduit">Nom produit</h4>
+                    <p class="fakeprice">20.99€</p>
+                    <img src="../ressources/signe-de-la-croix.png" alt="supprimer" class="supprimer">
+                </div>
+            </div>
 
             <div id="recap">
                 <h4>Récapitulatif</h4>
-                <div>
-                    <span>Total</span>
-                    <span id="total"></span>
+                <hr>
+                <div class="infos">
+                    <p>Total</p>
+                    <p id="total" class="right">50€</p>
+
+                    <p>Livraison</p>
+                    <p class="right">OFFERTS</p>
                 </div>
-                <div>
-                    <span>Livraison</span>
-                    <span>OFFERTS</span>
-                </div>
-                <input type="submit" value="Valider mon panier">
+                <hr>
+                <div class="submit"><input type="submit" value="Valider mon panier"></div>
             </div>
         </div>
+
 
     </section>
 

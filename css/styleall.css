@@ -5,12 +5,13 @@ html {
 }
 
 body {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     background-color: #fff;
 }
 
-header {
-    margin-bottom: 4%;
+section {
+    margin: 5%;
 }
 
 a {
@@ -25,6 +26,13 @@ h1 {
 
 p {
     font-size: 20px;
+}
+
+/* NAV ORDI */
+.div_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .arobase {
@@ -63,8 +71,26 @@ nav .onglets a {
     margin-right: 10px;
     padding-bottom: 5px;
 }
+
+/* NAV TELEPHONE */
+.onglets_tel {
+    height: 25px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+}
+
 footer {
-    margin-top: 4%;
     color: #fff;
     padding: 30px 100px;
     background-color: #6472AC;
@@ -112,4 +138,34 @@ footer .services .service p {
 
 #end {
     text-align: center;
+}
+
+/* MEDIA */
+/* MIN */
+@media all and (min-width:769px) {
+    .onglets_tel {
+        display: none;
+    }
+}
+
+/* MAX */
+@media all and (max-width:768px) {
+    .onglets {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 0% 5% 0% 2%;
+    }
+}
+
+@media all and (max-width:425px) {
+    footer {
+        padding: 30px;
+    }
+
+    .regroup {
+        display: block;
+    }
 }
