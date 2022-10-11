@@ -5,6 +5,10 @@
     font-family: 'Oswald', sans-serif;
     letter-spacing: 2px;
 }
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
 span.required {
     color: red;
 }
@@ -44,4 +48,10 @@ input[type=submit]:hover {
     border-radius: 7px;
     padding: 1vw;
     font-size: 1.2rem;
+}
+@media all and (max-width:425)
+{
+    label {
+        font-size: 1.5rem;
+    }
 }
