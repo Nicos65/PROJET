@@ -43,3 +43,10 @@ input[type=submit]:hover {
     border-radius: 7px;
     padding: 2.5%;
 }
+
+/* MEDIA */
+@media all and (max-width:425px) {
+    .regroup {
+        display: block;
+    }
+}
