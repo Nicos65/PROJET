@@ -192,3 +192,9 @@ footer .services .service p {
         display: block;
     }
 }
+
+@media all and (max-width:300px) {
+    h1 {
+        font-size: 1rem;
+    }
+}
