@@ -23,7 +23,7 @@
 .img1 {
     width: 150px;
     border-radius: 100%;
-    transition: .3 ease-in-out;
+    transition: .5 ease-in-out;
 }
 
 .img1:hover {
