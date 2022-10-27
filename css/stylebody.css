@@ -4,7 +4,7 @@
     transition: .3 ease-in-out;
 }
 
-.img1:hover{
+.img1:hover {
     width: 170px;
     box-shadow: 5px 5px 20px black;
 }
@@ -14,18 +14,15 @@
     justify-content: space-around;
 }
 
+.logos1 div {
+    margin-top: 10px;
+}
+
 @media all and (max-width:768px) {
     .img1 {
         width: 80px;
         height: 50px;
         border-radius: 100%;
-    }
-
-    .logos1 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 310px;
     }
 
     .logos1 div {

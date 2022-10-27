@@ -1,10 +1,10 @@
-#container{
+#container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.sliderContainer{
+.sliderContainer {
     height: 800px;
     width: 1200px;
     position: relative;
@@ -14,7 +14,7 @@
     align-self: center;
 }
 
-.sliderIcon{
+.sliderIcon {
     cursor: pointer;
     height: 40px;
     width: 40px;
@@ -29,7 +29,7 @@
     font-size: 3rem;
 }
 
-.sliderIcon:hover{
+.sliderIcon:hover {
     border-radius: 50%;
     background: #6472AC;
     color: white;
@@ -37,44 +37,36 @@
     width: 70px;
 }
 
-.right{
-    margin-right: -30px;
-}
-
-.left{
-    margin-right: 30px;
-}
-
-#right{
+#right {
     right: 3%;
 }
 
-#left{
+#left {
     left: 3%;
 }
 
-.sliderContent{
+.sliderContent {
     height: 74%;
     width: 74%;
 }
 
-.slide{
+.slide {
     height: 100%;
     display: none;
 }
 
-.slideImg{
+.slideImg {
     height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.slide{
+.slide {
     text-align: center;
 }
 
 /*Slide ajouté sur le fichier JS*/
-.slideActive{
+.slideActive {
     display: block;
 }
