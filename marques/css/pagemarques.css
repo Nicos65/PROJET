@@ -24,7 +24,7 @@ section{
 
 .img-logo:hover{
    width: 130px;
-   box-shadow: 5px 5px 20px black;
+   box-shadow: 5px 5px 20px #323552;
 }
 
 .produit{
