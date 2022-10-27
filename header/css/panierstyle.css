@@ -6,51 +6,44 @@
     letter-spacing: 2px;
 }
 
-/*Organisation flex du container*/
 #container{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
+/*Organisation des articles du panier*/
+.tel-img{
+    width: 100px;
+    justify-self: center;
+}
+
+.articles{
+    width: 100%;
+}
+
+.article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.desc{
+    grid-column: 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: end;
+}
+
+.fakeprice{
+    grid-row: 2;
+}
+
+/*Organisation du récapitulatif*/
 #articles{
     width: 100%;
 }
 
 #recap{
     width: 50%;
-}
-
-.article{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background: #f5f6f8;
-    margin-bottom: 2%;
-    margin-right: 2%;
-}
-
-.fakeprice{
-    grid-column: 3;
-    grid-row: 2;
-    justify-self: end;
-    font-weight: bold;
-    font-size: 1.7rem;
-}
-
-.supprimer{
-    grid-column: 3;
-    grid-row: 1;
-    justify-self: end;
-}
-
-.supprimer, .fakeprice{
-    margin-top: 7%;
-    margin-right: 5%;
-}
-
-.nomproduit{
-    text-align: left;
 }
 
 .infos{
