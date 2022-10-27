@@ -6,7 +6,6 @@ section{
 .xproduit{
     display: grid;
     grid-template-rows:50px 1fr 20px;
-    border: 2px solid;
 }
 
 button{
@@ -46,11 +45,4 @@ h3{
     width: 200px;
     border: 2px solid;
     margin-left: 700px;
-}
-
-#desc{
-    margin-left: 100px;
-    border: 1px solid;
-    padding: 10px;
-   
 }
