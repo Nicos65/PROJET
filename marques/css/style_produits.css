@@ -1,48 +1,24 @@
 section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
 }
 
 .xproduit{
-    display: grid;
-    grid-template-rows:50px 1fr 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 button{
     width: 100px;
     height: 50px;
     margin-top: 25px;
-    background-color: #6472AC;
-    color: #fff;
-}
-
-h2{
-    width: auto;
-    height: 30px;
-    padding-left: 20px;
-    font-size: 30px;
-    margin: 0%;
-    margin-top: 10px;
-}
-
-.telephone{
-    
-    padding-left: 120px;
-    padding-top: 30px;
-    
-}
-
-main{
-    display: flex;
-    flex-direction: column;
+    background-color: #fff;
+    color: #6472AC;
+    border-radius:10%;
 }
 
 h3{
-    text-align: right;
-    padding-right: 10px;
-    font-size: 80px;
-    margin: 0%;
-    width: 200px;
-    border: 2px solid;
-    margin-left: 700px;
+   text-align: right;
 }
